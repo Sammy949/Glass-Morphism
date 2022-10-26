@@ -112,32 +112,26 @@ body::after{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes text_reveal_box{
-    50%{
-        width: 100%;
-        left: 0;
-    }
 
-    100%{
-        width: 0;
-        left: 100%; 
-    }
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background: #000;
+    font-weight: 300;
+    position: fixed;
+    bottom: 0;
+    color: white;
 }
 
-@keyframes text_reveal{
-    100%{
-        color: white;
-    }
-}
-
-@keyframes text_reveal_name{
-    100%{
-        color: crimson;
-        font-weight: 500;
-    }
+.copyright a{
+  color: crimson;
+  text-decoration: none;
+  transition: 0.3s ease all;
 }
 
 
-
-
-
+.copyright a:hover{
+  color: white;
+  text-decoration: underline;
+}
